@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WikiArea</title>
+    <link rel="stylesheet" href="../css/dip.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Galada&family=Roboto+Slab:wght@300&display=swap"
+      rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div id="id01" class="modal">
+      <form
+        id="loginForm"
+        action="/api/auth/login"
+        method="post"
+        class="vhod animate">
+        <div class="vhoddiv">
+          <br /><label class="formvhod" lang="ru">Вход</label>
+          <span class="cross-modal"
+            ><img src="../rashod/krest.png" class="spanvhod"
+          /></span>
+          <br />
+          <br /><input
+            type="email"
+            lang="ru"
+            name="email"
+            placeholder="Введите email..."
+            required
+            class="inputvhod" /><br />
+          <br /><input
+            id="passwordvhod"
+            type="password"
+            lang="ru"
+            name="password"
+            placeholder="Введите пароль..."
+            required
+            class="inputvhod" /><br />
+          <a
+            href="#"
+            class="podsanu-gesamilod"
+            onclick="return show_hide_passwordvhod(this);"></a>
+          <button type="submit" lang="ru" class="buttonvhod">Войти</button
+          ><br />
+          <br /><label lang="ru" class="accvhod">Нет аккаунта?</label>
+          <br /><button
+            type="button"
+            lang="ru"
+            class="buttonvhodreg"
+            id="btn-modal-reg">
+            Зарегистрироваться</button
+          ><br />
+        </div>
+      </form>
+    </div>
+
+    <div id="id02" class="modal">
+      <form
+        id="registrationForm"
+        action="/api/auth/register"
+        method="post"
+        class="reg animate">
+        <div class="regdiv">
+          <br /><label class="formreg" lang="ru">Регистрация</label>
+          <span class="cross-modal"
+            ><img src="../rashod/krest.png" class="spanreg"
+          /></span>
+          <br />
+          <br /><input
+            type="email"
+            lang="ru"
+            name="email"
+            placeholder="Введите email..."
+            required
+            class="inputreg" /><br />
+          <br /><input
+            type="text"
+            lang="ru"
+            name="login"
+            placeholder="Придумайте логин..."
+            required
+            class="inputreg" /><br />
+          <br /><input
+            id="passwordreg"
+            type="password"
+            lang="ru"
+            name="password"
+            placeholder="Придумайте пароль..."
+            required
+            class="inputreg" /><br />
+          <a
+            href="#"
+            id="parvhod"
+            class="podreg"
+            onclick="return show_hide_passwordreg(this);"></a>
+          <br /><button type="submit" lang="ru" class="buttonreg">
+            Зарегистрироваться</button
+          ><br />
+        </div>
+      </form>
+    </div>
+    <header class="header">
+      <div class="container">
+        <div class="headin">
+          <div>
+            <span>
+              <h1 lang="en" class="headzagl" id="about">WikiArea</h1>
+              <img src="../rashod/rabbit.png" height="65" width="65" />
+            </span>
+          </div>
+          <nav class="nav">
+            <button class="nav-btn">
+              <a href="/about" class="nav-link" lang="ru"
+                ><p class="navs">О нас</p></a
+              >
+            </button>
+            <button class="nav-btn">
+              <a href="/q-and-a" class="nav-link" lang="ru"
+                ><p class="navs">Q&A</p></a
+              >
+            </button>
+            <button class="nav-btn" type="button" id="btn-modal-vhod">
+              <a class="nav-link" lang="ru"><p class="navs">Войти</p></a>
+            </button>
+            <button class="nav-btn">
+              <a href="/kontakt" class="nav-link" lang="ru"
+                ><p class="navs">Контакты</p></a
+              >
+            </button>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="Aqos">
+      <div class="container">
+        <div class="inq">
+          <div class="imgblock">
+            <img src="../rashod/markgreen.png" />
+            <span class="zacl" lang="ru">О нас</span>
+          </div>
+          <div class="bl">
+            <div class="bl1">
+              <p class="bl1p" lang="ru">
+                Общеобразовательная платформа «WikiArea» предоставляет
+                уникальные возможности для создания образовательных проектов и
+                участия в них. Наша основная миссия – сделать образование
+                доступным и увлекательным для всех.
+              </p>
+              <p class="bl1p" lang="ru">
+                «WikiArea» предоставляет вам инструменты и ресурсы, чтобы вы
+                могли создавать свои собственные образовательные проекты. Вы
+                можете разработать интерактивные уроки, курсы, тренировочные
+                программы и многое другое. Дайте волю своей фантазии и делитесь
+                своими знаниями с другими!
+              </p>
+            </div>
+            <div class="bl3">
+              <p class="bl3p" lang="ru">
+                Если вы хотите учиться и развиваться, то на «WikiArea» вы
+                найдете множество интересных образовательных проектов, созданных
+                другими пользователями. Вы сможете выбирать из различных
+                тематик, уровней сложности и форматов обучения. Присоединиться к
+                нашей образовательной платформе очень просто! Зарегистрируйтесь
+                на нашем сайте, создайте профиль и начните пользоваться всеми
+                возможностями, которые мы предлагаем.
+              </p>
+              <p class="bl3p" lang="ru">
+                Главные наши ценности: качество, доступность и инновации.
+                «WikiArea» стремится предоставлять качественный и актуальный
+                образовательный контент. Все проекты проходят проверку и оценку
+                перед публикацией на нашей платформе. Мы всегда следим за
+                последними тенденциями и инновациями в области образования и
+                стремимся внедрять новые технологии и методики, чтобы сделать
+                процесс обучения более увлекательным и эффективным.
+              </p>
+            </div>
+            <div class="bl2">
+              <p class="bl2p" lang="ru">
+                Учитесь и развивайтесь вместе с «WikiArea». Мы надеемся, что
+                здесь вы найдёте вдохновение, новые знания и интересных людей.
+                Вместе мы строим лучшее образование для всех! Если у вас
+                возникнут вопросы или потребуется помощь, наша команда всегда
+                готова помочь. Свяжитесь с нами по указанным контактным данным.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="../js/registration.js"></script>
+  <script src="../js/login.js"></script>
+  <script src="../js/vhod.js"></script>
+</html>

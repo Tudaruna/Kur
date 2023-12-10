@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WikiArea</title>
+        <link rel="stylesheet" href="../css/dip.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Galada&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div id="id01" class="modal">
+        <form
+          id="loginForm"
+          action="/api/auth/login"
+          method="post"
+          class="vhod animate">
+          <div class="vhoddiv">
+            <br /><label class="formvhod" lang="ru">Вход</label>
+            <span class="cross-modal"
+              ><img src="../rashod/krest.png" class="spanvhod"
+            /></span>
+            <br />
+            <br /><input
+              type="email"
+              lang="ru"
+              name="email"
+              placeholder="Введите email..."
+              required
+              class="inputvhod" /><br />
+            <br /><input
+              id="passwordvhod"
+              type="password"
+              lang="ru"
+              name="password"
+              placeholder="Введите пароль..."
+              required
+              class="inputvhod" /><br />
+            <a
+              href="#"
+              class="podsanu-gesamilod"
+              onclick="return show_hide_passwordvhod(this);"></a>
+            <button type="submit" lang="ru" class="buttonvhod">Войти</button
+            ><br />
+            <br /><label lang="ru" class="accvhod">Нет аккаунта?</label>
+            <br /><button
+              type="button"
+              lang="ru"
+              class="buttonvhodreg"
+              id="btn-modal-reg">
+              Зарегистрироваться</button
+            ><br />
+          </div>
+        </form>
+      </div>
+  
+      <div id="id02" class="modal">
+        <form
+          id="registrationForm"
+          action="/api/auth/register"
+          method="post"
+          class="reg animate">
+          <div class="regdiv">
+            <br /><label class="formreg" lang="ru">Регистрация</label>
+            <span class="cross-modal"
+              ><img src="../rashod/krest.png" class="spanreg"
+            /></span>
+            <br />
+            <br /><input
+              type="email"
+              lang="ru"
+              name="email"
+              placeholder="Введите email..."
+              required
+              class="inputreg" /><br />
+            <br /><input
+              type="text"
+              lang="ru"
+              name="login"
+              placeholder="Придумайте логин..."
+              required
+              class="inputreg" /><br />
+            <br /><input
+              id="passwordreg"
+              type="password"
+              lang="ru"
+              name="password"
+              placeholder="Придумайте пароль..."
+              required
+              class="inputreg" /><br />
+            <a
+              href="#"
+              id="parvhod"
+              class="podreg"
+              onclick="return show_hide_passwordreg(this);"></a>
+            <br /><button type="submit" lang="ru" class="buttonreg">
+              Зарегистрироваться</button
+            ><br />
+          </div>
+        </form>
+      </div>
+    <header class="header">
+        <div class="container">
+            <div class="headin">
+                <div>
+                    <span>
+                    <h1 lang="en" class="headzagl">WikiArea</h1> 
+                    <img src="../rashod/rabbit.png" height="65" width="65">
+                </span>
+                </div>
+                    <nav class="nav">
+                        <button class="nav-btn">
+                            <a href="/about" class="nav-link" lang="ru"><p class="navs">О нас</p></a>
+                          </button>
+                          <button class="nav-btn">
+                            <a href="/q-and-a" class="nav-link" lang="ru"><p class="navs">Q&A</p></a>
+                          </button>
+                          <button class="nav-btn" type="button" id="btn-modal-vhod">
+                            <a class="nav-link" lang="ru"><p class="navs">Войти</p></a>
+                          </button>
+                          <button class="nav-btn">
+                            <a href="/kontakt" class="nav-link" lang="ru"><p class="navs">Контакты</p></a>
+                          </button>
+                    </nav>
+            </div>
+        </div>
+    </header>
+    <div class="cont">
+        <div class="container">
+            <div class="inq">
+                <div class="imgblock">
+                    <img src="../rashod/markgreen.png">
+                <span class="zacl" lang="ru">Контакты</span>
+                </div>
+            </div> 
+            <div class="kontk">
+                <div class="kontbord1">
+                    <p lang="ru" class="kontzgl1" lang="ru">Контакт-центр</p>
+                    <p class="kontp1" lang="ru">ежедневно, 24/7</p>
+                    <img src="../rashod/phone.png" class="imgnomber1">
+                    <p class="moblenumber1">8 (911) 426-98-84</p>
+                    <p class="podnumber1" lang="ru">для экстренной связи</p>
+                    <img src="../rashod/phone.png" class="imgnomber2">
+                    <p class="moblenumber2">8 (989) 533-27-47</p>
+                    <p class="podnumber2" lang="ru">дополнительный номер</p>
+                    <img src="../rashod/pochta.png" class="pocht">
+                    <p class="pochtp" lang="ru">adubinetz@mail.ru</p>
+                </div>
+            </div> 
+            <div class="kontk2">
+                <div class="kontbord2">
+                    <p lang="ru" class="kontzgl2">Соц сети и мессенджеры</p>
+                    <p lang="ru" class="kontp2">ежедневно, 24/7</p>
+                    <a target="_blank" href="https://vk.com/lavender0_0dream"><img src="../rashod/vk.png" class="imgvk"></a>
+                    <a target="_blank" href="https://t.me/tudarina"><img src="../rashod/tg.png" class="imgtg"></a>
+                    <img src="../rashod/rabbit.png" class="imgnt">
+                </div>
+            </div> 
+            <div class="kontk3">
+                <div class="kontbord3">
+                    <p class="kontzgl3" lang="ru">Пресс-служба</p>
+                    <p class="kontp3" lang="ru">для запросов СМИ</p>
+                    <img src="../rashod/pochta.png" class="pocht3">
+                    <p class="pochtp3" lang="ru">adubinetz@mail.ru</p>
+                    <img src="../rashod/rabbit.png" class="imgnt3">
+                </div>
+            </div>            
+        </div>
+    </div>
+</body>
+<script src="../js/registration.js"></script>
+  <script src="../js/login.js"></script>
+  <script src="../js/vhod.js"></script>
+</html>

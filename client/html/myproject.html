@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WikiArea</title>
+    <link rel="stylesheet" href="dippr.css" />
+            <link rel="stylesheet" href="../css/dip.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Galada&family=Roboto+Slab:wght@300&display=swap"
+      rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  
+  <body class="me">
+    <class="my">
+    <header class="fill-green">
+      <div class="logo-section" >
+        <span lang="en">WikiArea</span>
+        <img src="../rashod/rabbit.png" alt="WikiArea Logo" />
+      </div>
+
+
+      <div class="mn" lang="ru">
+        <h2 lang="ru">Мои проекты</h2>
+      </div>
+      <button id="menuButton">
+        <img class="menu-img" src="../rashod/menu.png" alt="" />
+      </button>
+
+      <nav id="menu" class="menu">
+        <!-- Список меню -->
+        <ul>
+          <li><a href="mainprepod.html" lang="ru">Личный кабинет</a></li>
+          <li><a href="myproject.html" lang="ru">Мои проекты</a></li>
+          <li><a href="about" lang="ru">Выход</a></li>
+        </ul>
+      </nav>
+    </header>
+   
+    <div class="container">
+      <div class="search-box block fill-green">
+        <label for="search" lang="ru">Поиск:</label>
+        <input type="text" id="search"  />
+      </div>
+
+      <div class="project-area block border-orange fill-white">
+        <div class="add-filter">
+            <button class="button-delete  fill-green border-orange" type="button" lang="ru" onclick="window.location.href='addproject.html';">
+              Добавить проект
+            </button>
+          <div class="filter block fill-green">
+            <label for="filter-select" lang="ru">Фильтровать:</label>
+            <select id="filter-select" onchange="" lang="ru">
+              <option value="alphabet" lang="ru">По алфавиту</option>
+              <option value="moduleCount" lang="ru">По количеству модулей</option>
+              <option value="urgency" lang="ru">По срочности закрытия</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="project-list">
+          <!-- Project items will be inserted here -->
+          <div class="project-item fill-orange block">
+            <div class="project-info">
+              <div class="project-item-stat">
+                <p class="project-module" lang="ru">Количество модулей: 2 модуля</p>
+                <p class="project-subtitle" lang="ru">Доступ: беспрочный</p>
+              </div>
+              <p lang="ru"></p>
+              <div class="project-controls">
+                <button class="button-edit border-white fill-green delete-project"  type="button" lang="ru" onclick="window.location.href='changeproject.html';">
+                  Изменить
+                </button>
+                <button class="button-delete border-white fill-green delete-project" lang="ru">
+                  Удалить
+                </button>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal"  id="ud1">
+      <div class="okon">
+          <div class="okondiv">
+              <p class="okonp" lang="ru">Вы действительно хотите удалить свой проект?</p> <br>
+              <button type="button" class="okonbut" lang="ru">Удалить</button>
+              <button type="button" class="okonbut cross-modal" lang="ru">Отмена</button>
+          </div>
+      </div>
+  </div>
+<script src="../js/myproject.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/accardion.js"></script>
+  </div>
+  </body>
+
+</html>

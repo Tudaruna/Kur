@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WikiArea</title>
+        <link rel="stylesheet" href="../css/dip.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Galada&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../js/anim.js"></script>
+</head>
+<body>
+    <div id="id01" class="modal">
+        <form
+          id="loginForm"
+          action="/api/auth/login"
+          method="post"
+          class="vhod animate">
+          <div class="vhoddiv">
+            <br /><label class="formvhod" lang="ru">Вход</label>
+            <span class="cross-modal"
+              ><img src="../rashod/krest.png" class="spanvhod"
+            /></span>
+            <br />
+            <br /><input
+              type="email"
+              lang="ru"
+              name="email"
+              placeholder="Введите email..."
+              required
+              class="inputvhod" /><br />
+            <br /><input
+              id="passwordvhod"
+              type="password"
+              lang="ru"
+              name="password"
+              placeholder="Введите пароль..."
+              required
+              class="inputvhod" /><br />
+            <a
+              href="#"
+              class="podsanu-gesamilod"
+              onclick="return show_hide_passwordvhod(this);"></a>
+            <button type="submit" lang="ru" class="buttonvhod">Войти</button
+            ><br />
+            <br /><label lang="ru" class="accvhod">Нет аккаунта?</label>
+            <br /><button
+              type="button"
+              lang="ru"
+              class="buttonvhodreg"
+              id="btn-modal-reg">
+              Зарегистрироваться</button
+            ><br />
+          </div>
+        </form>
+      </div>
+  
+      <div id="id02" class="modal">
+        <form
+          id="registrationForm"
+          action="/api/auth/register"
+          method="post"
+          class="reg animate">
+          <div class="regdiv">
+            <br /><label class="formreg" lang="ru">Регистрация</label>
+            <span class="cross-modal"
+              ><img src="../rashod/krest.png" class="spanreg"
+            /></span>
+            <br />
+            <br /><input
+              type="email"
+              lang="ru"
+              name="email"
+              placeholder="Введите email..."
+              required
+              class="inputreg" /><br />
+            <br /><input
+              type="text"
+              lang="ru"
+              name="login"
+              placeholder="Придумайте логин..."
+              required
+              class="inputreg" /><br />
+            <br /><input
+              id="passwordreg"
+              type="password"
+              lang="ru"
+              name="password"
+              placeholder="Придумайте пароль..."
+              required
+              class="inputreg" /><br />
+            <a
+              href="#"
+              id="parvhod"
+              class="podreg"
+              onclick="return show_hide_passwordreg(this);"></a>
+            <br /><button type="submit" lang="ru" class="buttonreg">
+              Зарегистрироваться</button
+            ><br />
+          </div>
+        </form>
+      </div>
+    <header class="header1">
+        <div class="container">
+            <div class="headin">
+                <div>
+                    <span>
+                    <h1 lang="en" class="headzagl">WikiArea</h1> 
+                    <img src="../rashod/rabbit.png" height="65" width="65">
+                </span>
+                </div>
+                    <nav class="nav">
+                        <button class="nav-btn1">
+                            <a href="/about" class="nav-link1" lang="ru"><p class="navs">О нас</p></a>
+                          </button>
+                          <button class="nav-btn1">
+                            <a href="/q-and-a" class="nav-link1" lang="ru"><p class="navs">Q&A</p></a>
+                          </button>
+                          <button class="nav-btn1" type="button" id="btn-modal-vhod">
+                            <a class="nav-link1" lang="ru"><p class="navs">Войти</p></a>
+                          </button>
+                          <button class="nav-btn1">
+                            <a href="/kontakt" class="nav-link1" lang="ru"><p class="navs">Контакты</p></a>
+                          </button>
+                    </nav>
+            </div>
+        </div>
+    </header>
+    <div class="qos">
+        <div class="container">
+            <div class="inq">
+                <div class="imgblock">
+                    <img src="../rashod/markoran.png">
+                <span class="zacl" lang="ru">Q&A</span>
+                </div>
+            </div>
+                <div class="qanda">
+                    <details>
+                        <summary lang="ru">Как зарегистрироваться на платформе и создать учетную запись?</summary>
+                        <p class="ps" lang="ru">Для регистрации в меню нажмите на кнопку «Войти». Далее будет открыто окошко «Войти», в самом низу располагается кнопка «Зарегистрироваться». Нажмите на неё и введите необходимые данные.
+                        </p>
+                    </details>
+                    <details>
+                        <summary lang="ru">Как я могу найти подходящий образовательный проект для себя?</summary>
+                        <p class="ps" lang="ru"> На нашей платформе вы можете воспользоваться функцией поиска, чтобы найти проекты по различным категориям, темам, уровню сложности или формату обучения. Вы также можете просмотреть популярные проекты или посмотреть рекомендации нашей системы.</p>
+                    </details>
+                    <details>
+                        <summary lang="ru">Могу ли я участвовать в нескольких проектах одновременно?</summary>
+                        <p class="ps" lang="ru">  Да, вы можете участвовать в нескольких проектах одновременно. Выбор проектов для участия зависит от ваших интересов и времени, которое готовы уделить каждому из них.</p>
+                    </details>
+                    <details>
+                        <summary lang="ru">Каковы возможные форматы обучения на платформе?</summary>
+                        <p class="ps" lang="ru">На нашей платформе доступны различные форматы обучения, включая интерактивные курсы, тренировочные программы, вебинары, онлайн-лекции и многое другое. Вы можете выбирать формат, который лучше всего соответствует вашим потребностям и предпочтениям.
+                        </p>
+                    </details>
+                    <details>
+                        <summary lang="ru">Как выполнить задание и загрузить свою работу для проверки?</summary>
+                        <p class="ps" lang="ru">Под каждым уроком располагается ссылка для загрузки задания, необходимо нажать на неё и загрузить материал.</p>
+                    </details>
+                    <details>
+                        <summary lang="ru">Каково время доступа к проектам на платформе?</summary>
+                        <p class="ps" lang="ru">Время доступа к проектам на нашей платформе может различаться. Некоторые проекты могут предоставлять бессрочный доступ, позволяя вам учиться в своем темпе. Другие проекты могут иметь ограниченное время доступа, обычно указанное создателем проекта.</p>
+                    </details>
+                    <details>
+                        <summary lang="ru">Как работает система оценки проектов на платформе?</summary>
+                        <p class="ps" lang="ru">На нашей платформе система оценивания в баллах. Свой прогресс вы можете посмотреть в любое время во вкладке «Аналитика».</p>
+                    </details>
+                    <details>
+                        <summary lang="ru">Можно ли общаться с преподавателями или создателями проектов на платформе?</summary>
+                        <p class="ps" lang="ru"> Да, на нашей платформе вы можете общаться с преподавателями или создателями проектов. Вы можете задавать им вопросы, запрашивать дополнительную информацию или обратиться за помощью. Мы поощряем активное взаимодействие между участниками платформы.</p>
+                    </details>
+                    <details>
+                        <summary lang="ru">Как я могу создать образовательный проект на вашей платформе?</summary>
+                        <p class="ps" lang="ru"> Чтобы создать образовательный проект, вам необходимо зарегистрироваться на нашей платформе и войти в свой аккаунт. После этого вы сможете воспользоваться инструментами создания проектов, которые предоставляются нашей платформой.</p>
+                    </details>
+                    <details>
+                        <summary lang="ru">Как я могу вносить изменения в свой проект после публикации?</summary>
+                        <p class="ps" lang="ru">После публикации проекта вы можете вносить необходимые изменения и обновления. Вы сможете редактировать содержание, добавлять новые материалы или улучшать формат обучения. Это позволит вам поддерживать ваш проект актуальным и интересным для участников.</p>
+                    </details>
+                    <details>
+                        <summary lang="ru">Как защищена моя конфиденциальность на платформе?</summary>
+                        <p class="ps" lang="ru">  Мы придаем большое значение вашей конфиденциальности и принимаем меры для защиты ваших личных данных. Вся информация, которую вы предоставляете нам, обрабатывается в соответствии с нашей политикой конфиденциальности и не передается третьим лицам без вашего согласия.</p>
+                    </details>
+                    <details>
+                        <summary lang="ru">Какова политика платформы относительно контента и поведения пользователя?</summary>
+                        <p class="ps" lang="ru">Мы придерживаемся политики запрещающей распространение неприемлемого контента или поведения на нашей платформе. Мы стремимся создать безопасное и вдохновляющее образовательное сообщество. Если вы столкнулись с неправомерным поведением или содержанием, пожалуйста, сообщите нам, и мы предпримем необходимые меры.</p>
+                    </details>
+                    <details>
+                    <summary lang="ru">Как я могу получить помощь и поддержку, если у меня возникли проблемы?</summary>
+                        <p class="ps" lang="ru"> Если у вас возникли проблемы или у вас есть вопросы, вы можете обратиться к нашей команде поддержки. Мы всегда готовы помочь вам и ответить на ваши вопросы. Вы можете связаться с нами через контактные данные, указанные на нашем сайте.</p>
+                    </details>
+                    <details>
+                        <summary lang="ru">В какое время лучше писать?</summary>
+                        <p class="ps" lang="ru">В любое, мы работаем 24/7.</p>
+                    </details>
+                    <details>
+                        <summary lang="ru">Что делать, если я не нашел ответа на свой вопрос?</summary>
+                        <p class="ps" lang="ru">По вопросам работы платформы вы можете написать на электронный адрес: romanovaviktoriya04@gmail.com.</p>
+                    </details>
+                </div>
+            </div>
+    </div>
+</body>
+    <script src="../js/vhod.js"></script>
+    <script src="../js/functionQA.js"></script>
+    <script src="../js/registration.js"></script>
+  <script src="../js/login.js"></script>
+</html>

@@ -1,0 +1,871 @@
+/* Основное */
+html{
+  background-color: #6A8532;
+}
+body {
+    margin: 0 auto;
+    line-height: 1.6;
+    position: relative;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  color: white;
+  display: inline-block;
+  line-height: 0px;
+}
+img {
+  margin: 0 0 0 0;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* Языки */
+
+:lang(ru) {
+    font-family: 'Roboto Slab', cursive;
+    font-weight: bold;
+}
+
+:lang(en) {
+    font-family: 'Galada', cursive;
+}
+
+/* Шапка */
+
+.header{
+  width: 100%;
+  height: 100px;
+  background: #6A8532;
+  position: fixed;
+  z-index: 999;
+}
+.header1{
+  width: 100%;
+  height: 100px;
+  background: #F9A03F;
+  position: fixed;
+  z-index: 999;
+}
+.headin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 20px 20px;
+}
+.headzagl{
+  font-size: 70px;
+}
+.nav{
+  margin-right: 10px;
+  align-items: center;
+  border-radius: 15px;
+}
+.nav-link {
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s linear;
+  transition: background-color 0.2s linear;
+  border-radius: 15px;
+}
+.nav-btn {
+  background-color: #6A8532;
+  border: 0px;
+  border-radius: 10px;
+  margin-left: 15px;
+  right: 50px;
+  position: relative;
+  border-radius: 15px;
+}
+.nav-link1 {
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s linear;
+  transition: background-color 0.2s linear;
+  border-radius: 15px;
+}
+.nav-btn1 {
+  background-color: #F9A03F;
+  border: 0px;
+  border-radius: 10px;
+  margin-left: 15px;
+  right: 50px;
+  position: relative;
+  border-radius: 15px;
+}
+.navs{
+  font-size: 30px;
+  text-align: center;
+  padding: 5px 5px;
+  line-height: 0px;
+  border-radius: 15px;
+}
+.nav-btn:hover .nav-link {
+  background-color: #F9A03F;
+  color: #ffffff;
+  border-radius: 15px;
+}
+.nav-btn1:hover .nav-link1 {
+  background-color: #6A8532;
+  color: #ffffff;
+  border-radius: 15px;
+}
+.nav-link.active {
+  color: #ffffff;
+  border-radius: 15px;
+}
+
+/* Интро */
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url(../rashod/intro.png) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #6A8532;
+
+}
+.zaglwiki{
+ text-shadow: #6A8532 1px 0 10px;
+}
+.zagl{
+  font-size: 85px;
+  width: 100%;
+  margin-top: 240px;
+  text-align: center;
+}
+.zaglh{
+  font-size: 40px;
+  position: relative;
+  bottom: 70px;
+  text-shadow: #6A8532 1px 0 10px;
+}
+.zaglimg{
+  height: 150px;
+  width: 150px;
+  position: relative;
+  left: -12px;
+  top: 12px;
+  text-shadow: #6A8532 1px 0 10px;
+}
+.down{
+    margin: auto;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    top: 100px;
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+    padding-bottom: 115px;
+    
+    
+}
+a{text-decoration: none;}
+.transition-out {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  
+}
+.downp{
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: #6A8532 1px 0 10px;
+  text-decoration: none;
+}
+.downimg{
+  width: 35px;
+  height: 35px;
+}
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-30px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-30px); }
+}
+.downdiv{
+  text-align: center;
+  position: relative;
+  bottom: 30px;
+}
+.link {
+  text-decoration: none;
+}
+
+/* О нас */
+
+.Aqos{
+  width: 100%;
+  height: 950px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 0;
+  overflow: hidden;
+  background-image: url(../rashod/polhphoneor.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.bl{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display:inline-block;
+}
+.bl1{
+  background-color: #6A8532;
+  border-radius: 20px;
+  width: 43%;
+  padding: 0 30px;
+  left: 20px;
+  position: relative;
+  float: left;
+}
+.bl1p{
+  text-indent: 30px;
+  color: #fff;
+  font-size: 25px;
+  padding: 5px 5px;
+  text-align: left;
+}
+.bl2{
+  width: 43%;
+  padding: 0 30px;
+  left: 20px;
+  position: relative;
+  bottom: 330px;
+}
+.bl2p{
+  text-indent: 30px;
+  color: #F9A03F;
+  font-size: 25px;
+  padding: 5px 5px;
+  text-align: left;
+}
+.bl3{
+  background-color: #F9A03F;
+  border-radius: 20px;
+  width: 43%;
+  padding: 0 30px;
+  position: relative;
+  float: left;
+  left: 60px;
+}
+.bl3p{
+  text-indent: 30px;
+  color: #fff;
+  font-size: 25px;
+  padding: 5px 5px;
+  text-align: left;
+}
+
+/* Закладка */
+
+.inq{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    text-wrap: balance;
+}
+
+.zacl{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.imgblock {
+    position: relative;
+    right: 660px;
+    display: inline-block;
+}
+
+.imgblock img {
+    height: 40px;
+    width: 200px;
+}
+.imgblock span {
+    color: #ffffff;
+    border-radius: 2px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 15px;
+}
+
+/* Страница Q&A */
+
+.qos{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 0;
+  background-image: url(../rashod/polnphonegreen.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.qanda{
+  position: relative;
+  top: 30px;
+}
+.ps{
+  color: #6A8532;
+  position: relative;
+  font-size: 25px;
+  text-indent: 30px;
+  background-color: #fff;
+  border: 10px solid;
+  border-radius: 20px;
+  padding: 20px 20px 20px 20px;
+}
+details{
+  position: relative;
+  left: 130px;
+  display:block;
+  background: #F9A03F;
+  width:1200px;
+  box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-radius: 10px;
+  overflow:hidden;
+  margin-bottom: 10px;
+}
+summary::-webkit-details-marker{display:none;}
+summary::-moz-list-bullet{list-style-type:none;}
+summary::marker{display:none;} 
+summary {
+   display:block;
+   padding: .3em 1em .3em .9em;
+   border-bottom: 1px solid #e2e8f0;
+   color: #fff;
+   font-size: 25px;
+   cursor: pointer;
+   position: relative;
+}
+summary:before {  
+  top: 15px;
+  right: 40px;
+  color: transparent;
+  background: url(../rashod/qanda.png) no-repeat 50% 50% / 1em 1em;
+  width: 1em;
+  height: 1em;  
+  content: "";
+  position: absolute;
+  transition: transform .5s;
+}
+details[open] > summary:before {
+  transform: scale(1,-1);
+}
+summary ~ * {
+  padding: 10px 10px 10px 10px;
+}
+details[open] summary ~ *{ 
+  animation: sweep .5s ease-in-out;
+}
+@keyframes sweep {
+  0%    {opacity: 0;}
+  100%  {opacity: 1;}
+}
+summary:focus {
+  outline:0;
+  box-shadow: inset 0 0 1px rgba(0,0,0,0.3), inset 0 0 2px rgba(0,0,0,0.3);
+}
+
+/* Контакты */
+
+.cont{
+  width: 100%;
+  height: 644px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 0;
+  overflow: hidden;
+  position: relative;
+  background-image: url(../rashod/polhphoneor.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.kontk{
+  width: 40%;
+  background-image: url(../rashod/intro.png);
+  background-size: cover;
+  border-radius: 20px;
+  padding: 20px 20px 20px 20px;
+  margin: 10px 10px 10px 30px;
+  display: inline-block;
+  border: #6A8532 5px solid;
+  border-radius: 20px;
+}
+
+.kontbord1{
+  margin: 10px 10px 10px 10px;
+  background-color: #F9A03F;
+  border: #fff 10px solid;
+  border-radius: 20px;
+  position: relative;
+  height: 560px;
+}
+.kontzgl1{
+  font-size: 40px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+}
+.kontp1{
+  color:#fff;
+  font-size: 25px;
+  position: relative;
+  top: -60px;
+  text-align: center;
+}
+.imgnomber1{
+  height: 50px;
+  width: 50px;
+  position: relative;
+  top: -60px;
+  left: 110px;
+}
+.moblenumber1{
+  color: #fff;
+  position: relative;
+  font-size: 30px;
+  text-align: center;
+  top: -145px;
+  margin-left: 30px;
+}
+.podnumber1{
+  color: #fff;
+  position: relative;
+  font-size: 19px;
+  top: -185px;
+  text-align: center;
+}
+.imgnomber2{
+  height: 50px;
+  width: 50px;
+  position: relative;
+  top: -170px;
+  left: 110px;
+}
+.moblenumber2{
+  color: #fff;
+  position: relative;
+  font-size: 30px;
+  text-align: center;
+  top: -250px;
+  margin-left: 30px;
+}
+.podnumber2{
+  color: #fff;
+  position: relative;
+  font-size: 19px;
+  top: -290px;
+  text-align: center;
+}
+.pocht{
+  height: 45px;
+  width: 45px;
+  position: relative;
+  top: -280px;
+  left: 110px;
+}
+.pochtp{
+  color: #fff;
+  position: relative;
+  font-size: 30px;
+  text-align: center;
+  top: -370px;
+  margin-left: 60px;
+}
+
+.kontk2{
+  width: 45%;
+  background-image: url(../rashod/intro.png);
+  background-size: cover;
+  border-radius: 20px;
+  padding: 20px 20px 20px 20px;
+  margin: 10px 10px 10px 30px;
+  display: inline-block;
+  position: relative;
+  bottom: 470px;
+  border: #F9A03F 5px solid;
+  border-radius: 20px;
+}
+.kontbord2{
+  margin: 10px 10px 10px 0;
+  background-color: #F9A03F;
+  border: #fff 10px solid;
+  border-radius: 20px;
+  position: relative;
+  align-items: right;
+  height: 220px;
+}
+.imgvk{
+  height: 50px;
+  width: 50px;
+  padding: 10px 10px 10px 20px;
+  position: relative;
+  bottom: 100px;
+}
+.imgtg{
+  height: 50px;
+  width: 50px;
+  padding: 10px 10px 10px 10px;
+  position: relative;
+  bottom: 100px;
+}
+.imgnt{
+  height: 70px;
+  width: 70px;
+  padding: 10px 10px 0 370px;
+  position: relative;
+  bottom: 100px;
+}
+.kontzgl2{
+  font-size: 40px;
+  color: #fff;
+  padding: 0 10px 10px 20px;
+  font-weight: bold;
+
+  text-decoration: underline;
+}
+.kontp2{
+  color:#fff;
+  font-size: 25px;
+  position: relative;
+  top: -60px;
+  padding: 0 10px 10px 15px;
+}
+
+.kontk3{
+  width: 45%;
+  background-image: url(../rashod/intro.png);
+  background-size: cover;
+  border-radius: 20px;
+  padding: 20px 20px 20px 20px;
+  margin: 10px 10px 10px 30px;
+  position: relative;
+  left: 670px;
+  border: #F9A03F 5px solid;
+  border-radius: 20px;
+  bottom: 500px;
+}
+.kontbord3{
+  margin: 10px 10px 10px 0;
+  background-color: #F9A03F;
+  border: #fff 10px solid;
+  border-radius: 20px;
+  position: relative;
+  align-items: right;
+  height: 220px;
+}
+.kontzgl3{
+  font-size: 40px;
+  color: #fff;
+  padding: 0 10px 10px 20px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.kontp3{
+  color:#fff;
+  font-size: 25px;
+  position: relative;
+  top: -60px;
+  padding: 0 10px 10px 20px;
+}
+.pocht3{
+  height: 45px;
+  width: 45px;
+  position: relative;
+  padding: 0 10px 10px 20px;
+  bottom: 80px;
+}
+.pochtp3{
+  color: #fff;
+  position: relative;
+  font-size: 30px;
+  margin-left: 70px;
+  bottom: 178px;
+}
+.imgnt3{
+  height: 70px;
+  width: 70px;
+  padding: 10px 10px 10px 530px;
+  position: relative;
+  bottom: 270px;
+}
+
+/* Вход */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    
+}
+
+.modal.active {
+  display: block;
+}
+.vhod{
+  background-image: url(../rashod/intro.png);
+ background-size: cover;
+  border-radius: 20px;
+  padding: 10px 10px 10px 10px;
+  width: 38%;
+  height: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+  align-items: center;
+  text-align: center;
+}
+.buttonvhod{
+  color: #fff;
+  font-size: 25px;
+  background-color: #6A8532;
+  padding: 10px 10px 10px 10px;
+  margin: auto;
+  border-radius: 20px;
+  border: #fff solid 2px;
+  width: 65%;
+}
+.spanvhod{
+  height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 11px;
+    right: 14px;
+}
+.inputvhod{
+  color: #6A8532;
+    font-size: 25px;
+    border-radius: 10px;
+    border-color: #6A8532;
+    border: #fff solid 2px;
+    margin: 15px;
+    width: 65%;
+}
+.inputvhod:focus{
+  outline: #6A8532;
+}
+.inputvhod::placeholder {color: #6A8532;}
+
+.vhoddiv{
+  margin: 10px 10px 10px 10px;
+  background-color: #F9A03F;
+  border: #fff 10px solid;
+  border-radius: 20px;
+  position: relative;
+  height: 93%;
+}
+.formvhod{
+  font-size: 40px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 30px 30px 30px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+}
+.accvhod{
+  position: relative;
+  font-size: 20px;
+  color: #fff;
+  
+}
+.buttonvhodreg{
+  color: #fff;
+  font-size: 25px;
+  background-color: #6A8532;
+  padding: 10px 10px 10px 10px;
+  border-radius: 20px;
+  border: #fff solid 2px;
+  width: 65%;
+}
+.podsanu-gesamilod {
+  position: absolute;
+  top: 230px;
+  right: 90px;
+  width: 30px;
+  height: 30px;
+  background: url(../rashod/eyeotcrt.png) no-repeat;
+  background-size: cover;
+}
+.view {
+  background: url(../rashod/eyezacrt.png) no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 230px;
+  right: 90px;
+  width: 30px;
+  height: 30px;
+}
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+
+/* Регистрация */
+
+.reg{
+  background-image: url(../rashod/intro.png);
+ background-size: cover;
+  border-radius: 20px;
+  padding: 10px 10px 10px 10px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+  align-items: center;
+  text-align: center;
+  height: 62%;
+}
+.regdiv{
+  margin: 10px 10px 10px 10px;
+  background-color: #F9A03F;
+  border: #fff 10px solid;
+  border-radius: 20px;
+  position: relative;
+  height: 93%;
+}
+.formreg{
+  font-size: 40px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+  margin: auto;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+}
+.spanreg{
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+.inputreg{
+  color: #6A8532;
+  font-size: 25px;
+  border-radius: 10px;
+  border-color: #6A8532;
+  border: #fff solid 2px;
+  width: 65%;
+}
+.inputreg:focus{
+  outline: #6A8532;
+}
+.inputreg::placeholder {color: #6A8532;}
+.podreg {
+  position: absolute;
+  top: 250px;
+  right: 100px;
+  width: 30px;
+  height: 30px;
+  background: url(../rashod/eyeotcrt.png) no-repeat;
+  background-size: cover;
+}
+.viewreg {
+  background: url(../rashod/eyezacrt.png) no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 250px;
+  right: 100px;
+  width: 30px;
+  height: 30px;
+}
+.buttonreg{
+  color: #fff;
+  font-size: 25px;
+  background-color: #6A8532;
+  padding: 10px 10px 10px 10px;
+  margin: 30px 30px 30px 30px;
+  border-radius: 20px;
+  border: #fff solid 2px;
+  width: 65%;
+}
+
+/* Окошки */
+
+.okon{
+  background-image: url(../rashod/intro.png);
+  background-size: cover;
+  border-radius: 20px;
+  width: 35%;
+  padding: 20px 20px 20px 20px;
+  text-align: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  height: 35%;
+}
+.okondiv{
+background-color: #F9A03F;
+border-radius: 20px;
+border: #fff 10px solid;
+padding: 15px 15px 15px 15px;
+}
+.okonp{
+color: #ffffff;
+font-size: 30px;
+}
+.okonbut{
+  background-color: #6A8532;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+  margin: 0 10px 10px 0;
+  border-radius: 20px;
+  border: #fff solid 2px;
+  font-size: 25px;
+  width: 40%;
+}
+
+/*  */
