@@ -27,11 +27,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       const deleteButton = document.createElement("button");
       deleteButton.classList.add("buttondel", "border-white", "fill-green");
       deleteButton.textContent = "Удалить";
-
-      // Убираем существующие обработчики событий перед добавлением новых
       deleteButton.removeEventListener("click", deleteButtonClickHandler);
-
-      // Добавление обработчика событий для удаления модуля
       deleteButton.addEventListener("click", deleteButtonClickHandler);
 
       function deleteButtonClickHandler() {
@@ -71,8 +67,6 @@ document.addEventListener("DOMContentLoaded", async function () {
             }
 
             console.log("Project deleted successfully");
-
-            // Очистка локального хранилища после успешного удаления
             localStorage.removeItem("moduleToDelete");
             location.reload();
           } catch (error) {

@@ -127,15 +127,12 @@ document.addEventListener("DOMContentLoaded", async function () {
         "fill-green",
         "delete-project"
       );
+
       deleteButton.textContent = "Удалить";
       deleteButton.addEventListener("click", () => {
         localStorage.setItem("projectToDelete", JSON.stringify(project));
-
-        // Показать модальное окно
         const modal = document.getElementById("ud1");
         modal.style.display = "flex";
-
-        // Обработчик для кнопки "Удалить" в модальном окне
         const confirmDeleteButton = document.querySelector(".okonbut");
         confirmDeleteButton.addEventListener("click", async () => {
           const projectToDelete = JSON.parse(
@@ -144,7 +141,6 @@ document.addEventListener("DOMContentLoaded", async function () {
           const userData = JSON.parse(localStorage.getItem("userData"));
 
           try {
-            // Отправка DELETE запроса на сервер
             const response = await fetch(
               `/api/project/${projectToDelete.id}?userId=${userData.user_id}`,
               {
@@ -152,28 +148,21 @@ document.addEventListener("DOMContentLoaded", async function () {
                 credentials: "include",
               }
             );
-
             if (!response.ok) {
               throw new Error(`HTTP error! Status: ${response.status}`);
             }
-
             console.log("Project deleted successfully");
 
-            // Очистка локального хранилища после успешного удаления
             localStorage.removeItem("projectToDelete");
             location.reload();
           } catch (error) {
             console.error("Error:", error);
-            // Обработка ошибки при удалении проекта
           }
 
           modal.style.display = "none";
         });
-
-        // Обработчик для кнопки "Отмена" в модальном окне
         const cancelButton = document.querySelector(".cross-modal");
         cancelButton.addEventListener("click", () => {
-          // Скрыть модальное окно
           modal.style.display = "none";
         });
       });

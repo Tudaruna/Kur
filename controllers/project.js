@@ -51,7 +51,7 @@ class Controller {
       res.status(500).json({ error: error.message });
     }
   }
-
+ 
   async deleteProject(req, res) {
     try {
       const projectId = req.params.id;
